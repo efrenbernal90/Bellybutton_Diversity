@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css"></link>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p id="intro" style="font-size: medium;"><b>Improbale Beef, Inc. has partnered with a molecular biology lab in attempts of finding a bacterial species capable of producing 
+          proteins that taste like beef! The study is particularly interested in bacterial species found in our bellybuttons as a potential 
+          candidate! This website aggragates demographic information of participants of the study, as well as quantatative information for 
+          the bacterial species found. The information is displayed in a horizontal bar graph to help visualize the total distribution, whereas 
+          a bubble chart is used to alternatively show distribution and spread of bacterial species found. Each participant is assigned an ID, which they can input below to display their information.
+        </b></p>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="well">
+          <h4>Test Subject ID No.:</h4>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div id="bar"></div>
+      </div>
+      <!-- <div class="clearfix visible-xs-block"></div> -->
+      <div class="col-xs-12 col-md-4">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-s-10 col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/samples.json"></script>
+  <script src="static/js/charts.js"></script>
+</body>
+
+</html>
