@@ -170,3 +170,8 @@ Using Plotly, you can create objects to contain the data and the layout of desir
 
 ![Hover over the data for more results](static/css/images/website2.png)
 
+3. The site is mobile responsive as well, thanks to bootstrap and CSS!
+
+![Mobile1](static/css/images/website3.png)
+
+![Mobile2](static/css/images/website4.png)
